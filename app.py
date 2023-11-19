@@ -25,9 +25,19 @@ def index():
     return render_template("index.html")
 
 
+@app.route('/cal')
+def cal():
+    return render_template("cal.html")
+
+
 @app.route('/continue')
 def continue_r():
     return render_template("continue.html")
+
+
+@app.route('/recepts')
+def recepts():
+    return render_template("recepts.html")
 
 
 @app.route('/about')
@@ -38,6 +48,11 @@ def about():
 @app.route('/calories')
 def calories():
     return render_template("calories.html")
+
+
+@app.route('/games')
+def games():
+    return render_template("games.html")
 
 
 @app.route('/posts')
